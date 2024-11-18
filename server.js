@@ -21,11 +21,7 @@ app.use(cors()); // Allow karo Cross-Origin requests
 // Routes set karo
 app.use('/api/auth', authRoutes);
 
-// app.use(cors({
-//     origin: ["https://infinity-jobs-main-2.vercel.app"],
-//     methods: ["POST", "GET"],
-//     credentials: true, // Fixed typo here
-// }));
+
 
 // Static files serve karo
 app.use(express.static(path.join(_dirname, 'client/dist')));
